@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div id="question">
+    <div class="title">{{thread.title}}</div>
+    <div class="question">{{thread.question}}</div>
+  </div>
+  <div id="answer">
+    <div *ngFor = "let answer of thread.answers" class="answer">
+      {{answer.answer}}
+    </div>
+  </div>
+  <div id="NewAnswer">
+    <script src="node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="node_modules/codemirror/mode/markdown/markdown.js"></script>
+    <script>
+    </script>
+  </div>
+</div>

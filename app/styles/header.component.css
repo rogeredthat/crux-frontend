@@ -1,0 +1,57 @@
+:host {
+  width:100%;
+  height:60px;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+  position:fixed;
+  background: white;
+  top:0px;
+  left:0px;
+  z-index: +100;
+  box-sizing: border-box;
+  padding: 0px 5%;
+}
+#wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+#wrapper>div {
+  float: left;
+  color:#5091DA;
+  margin:0px 1px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+#wrapper>div>div, #wrapper>div>li {
+  display: inline-block;
+  position:relative;
+  margin:0px 10px;
+  line-height: 60px;
+  vertical-align: middle;
+  padding: 0px 20px;
+  transition:all 0.2s;
+}
+#wrapper>div#user_details {
+  float:right;
+}
+#wrapper>div#navigation>li:hover {
+  box-shadow:0px -3px 0px 0px #5091DA inset;
+}
+#wrapper>div#search_wrapper {
+  width:300px;
+  margin-left: 20px;
+}
+#wrapper>div#search_wrapper>input {
+  width: 100%;
+  line-height: 60px;
+  padding:0px 20px;
+}
+#wrapper>div#login_button {
+  float:right;
+}
+
+#wrapper>div#logo {
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+.wrapper {
+  width: 60%;
+  /*height: 100%;*/
+  display: block;
+  position:relative;
+  margin:30px 0px;
+}
+#question {
+  width: 100%;
+  display: block;
+  line-height: 2em;
+  background:white;
+  border: 1px solid #eec;
+  border-bottom:none;
+  color: #445;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#question > .title{
+  font-size: 2em;
+  font-weight: bolder;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+#question > .title{
+  font-size: 1.2em;
+}
+#answer {
+  font-size: 0.8em;
+  width: 100%;
+  position:relative;
+  line-height: normal;
+  border: 1px solid #eec;
+  border-top:none;
+  box-sizing:border-box;
+}
+#answer > .answer {
+  background: #efeffe;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom:1px solid rgba(0,0,0,0.1);
+  padding:10px 20px;
+}
+#answer > .answer:last-child {
+  border-bottom: none;
+}

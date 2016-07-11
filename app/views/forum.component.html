@@ -1,0 +1,15 @@
+<div id="popular_threads">
+  <span class="title">Popular Threads</span>
+  <li *ngFor = "let thread of threads" (click)="gotoThread(thread)">
+    <div class="stats">
+      <div class="points"><span>Points</span><span>{{thread.points}}</span></div>
+      <div class="answers"><span>Answers</span><span>{{thread.answers.length}}</span></div>
+      <div class="views"><span>Views</span><span>0</span></div>
+    </div>
+    <div class="title">{{thread.title}}</div>
+    <div class="asker">asked by {{thread.user}}</div>
+    <div class="tags">
+      <div *ngFor = "let tag of thread.tags">{{tag}}</div>
+    </div>
+  </li>
+</div>

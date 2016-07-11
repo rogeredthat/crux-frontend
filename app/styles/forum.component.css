@@ -1,0 +1,86 @@
+#popular_threads {
+  position:relative;
+  width: 60%;
+  padding:60px 0px 30px 0px;
+  background: white;
+}
+#popular_threads > .title {
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  line-height: 60px;
+  font-size: 1.5em;
+  color: #445;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  font-weight: 300;
+}
+#popular_threads > li {
+  width: 100%;
+  min-height: 60px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  line-height: 1.2em;
+  list-style-type: none;
+  cursor: default;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+#popular_threads > li:hover {
+  background: #f5f5fa;
+}
+#popular_threads > li > div {
+  display: block;
+  font-size: 1em;
+  float: left;
+}
+#popular_threads > li > .title {
+  color: #445;
+  font-weight: 500;
+  max-width: 80%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  position: relative;
+}
+#popular_threads > li > .tags {
+  white-space: nowrap;
+  margin-left: 20px;
+  float: right;
+  line-height: 1em;
+}
+#popular_threads > li > .tags > div {
+  height: 20px;
+  line-height: 20px;
+  margin: 10px;
+  font-size: 12px;
+  display: inline-block;
+  background: #bbdefb;
+  color: #1976d2;
+  border-radius: 2px;
+  padding: 0px 5px;
+}
+#popular_threads > li > .asker {
+  line-height: 40px;
+  font-size: 12px;
+  color: #aaa;
+  float: left;
+  position:relative;
+  clear: both;
+}
+#popular_threads > li > .stats {
+  width: 20%;
+  height: 40px;
+  display: inline-flex;
+  font-size: 0.7em;
+}
+#popular_threads > li > .stats > div {
+  flex-grow: 1;
+  text-align: center;
+}
+#popular_threads > li > .stats > div > span {
+  width: 100%;
+  float: left;
+  clear: both;
+}

@@ -1,0 +1,21 @@
+<div id="wrapper">
+  <div id="logo" [routerLink]="['/']"><strong>CRUx</strong></div>
+  <div id="search_wrapper">
+    <input type="text" placeholder="Search"/>
+  </div>
+  <div id="navigation">
+    <li *ngFor = "let tab of navigation" [routerLink]="[tab.url]">
+      <label>{{tab.label}}</label>
+    </li>
+  </div>
+  <div id="user_details" *ngIf="current_user">
+    <div class="image">
+      <img src="current_user.avatarUrl" alt="UserAvatar"/>
+    </div>
+    <div class="name">{{current_user.username}}</div>
+  </div>
+  <div id="login_button" *ngIf="!current_user">
+    <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"> Login </a>
+  </div>
+</div>
